@@ -1,5 +1,5 @@
 function play_se(){
-var warning = new Audio('canon.mp3');
+var warning = new Audio('.mp3');
 var voice = new Audio('voice.mp3')
 warning.play();
 voice.play();
