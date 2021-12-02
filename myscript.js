@@ -46,3 +46,13 @@ time--;
 $('#timer').text(time);
 },1000);
 });
+
+
+//ipアドレス
+$.ajax({
+    url: "https://ipinfo.io",
+    dataType: "jsonp",
+    success: function(res){
+         $(".ip-address").text(res.ip);
+    }
+});
