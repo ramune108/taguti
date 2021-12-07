@@ -56,3 +56,15 @@ $.ajax({
          $(".ip-address").text(res.ip);
     }
 });
+
+
+//音量
+function fadein()
+{
+  var vl = media.volume;
+  if (vl < 1.0)
+  {
+    media.volume = Math.ceil((vl+0.1)*10)/10;
+    setTimeout("fadein()",200);
+  }
+}
